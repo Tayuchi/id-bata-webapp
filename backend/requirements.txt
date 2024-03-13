@@ -1,0 +1,4 @@
+Django
+django-rest-framework
+django-debug-toolbar
+django-cors-headers
