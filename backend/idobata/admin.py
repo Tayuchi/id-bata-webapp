@@ -12,4 +12,4 @@ class MessageAdmin(admin.ModelAdmin):
     list_display = ('id', 'room', 'user', 'message', 'created_at')
     list_filter = ('room', 'created_at')
     search_fields = ('user', 'message')
-
+    ordering = ('created_at',)
