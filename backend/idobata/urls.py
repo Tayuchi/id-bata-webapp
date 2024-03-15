@@ -3,6 +3,6 @@ from .views import TemplateView, RoomListCreateAPIView, MessageListCreateAPIView
 
 urlpatterns = [
     path("", TemplateView.as_view(), name="index"),
-    path('rooms/', RoomListCreateAPIView.as_view(), name='room-list-create'),
-    path('messages/', MessageListCreateAPIView.as_view(), name='message-list-create'),
+    path('api/rooms/', RoomListCreateAPIView.as_view(), name='room-list-create'),
+    path('api/messages/', MessageListCreateAPIView.as_view(), name='message-list-create'),
 ]
