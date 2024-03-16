@@ -30,7 +30,7 @@ export default function Home() {
             <Image src="/idobata_logo.jpg" width={800} height={800} alt="logo"/>
             <Flex>
               <Spacer />
-              <Link href="/idoList">
+              <Link href="/ido-list">
                 <Button colorScheme="primary" variant="solid" size='lg' style={{ marginRight: '250px', scale: "1.5" }}>
                   はじめる
                 </Button>

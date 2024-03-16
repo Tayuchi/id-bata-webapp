@@ -1,7 +1,8 @@
 "use client"
 
-import { Flex, UIProvider, VStack, Text, Center } from '@yamada-ui/react'
 import React, { useEffect, useState } from 'react'
+import Link from 'next/link'
+import { Flex, UIProvider, VStack, Text, Center, Spacer } from '@yamada-ui/react'
 
 interface Room {
   id: number;
@@ -32,8 +33,14 @@ const RoomList = () => {
                   <Text className="subtitle-text">
                     井戸一覧
                   </Text>
-                  <ul className="subtitle-text">
-                    {rooms.map((room: Room) => (<li key={room.id}>{room.room_name}</li>))}
+                  <ul className="subtitle-text">                    
+                    {rooms.map((room: Room) => (
+                      <li key={room.id}>
+                        <Link href={`/rooms/${room.id}`}>
+                          {room.room_name}
+                        </Link>
+                      </li>
+                    ))}
                   </ul>
                 </VStack>
               </Center>
